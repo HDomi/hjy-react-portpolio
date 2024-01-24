@@ -1,15 +1,11 @@
 import "./Main.scss";
-import { useEffect, useState } from "react";
-import { useSetRecoilState } from "recoil";
-import { isLoadingState } from "@recoil/atoms/loadingState";
+// import { useEffect, useState } from "react";
 import ImgRocket from "@assets/images/rocket.svg";
 import ImgEarth from "@assets/images/earth.svg";
 import ImgMoon from "@assets/images/moon.svg";
 import ImgAstronaut from "@assets/images/astronaut.svg";
 import Typing from "@components/layout/typing/Typing";
 function Main() {
-  const setLoading = useSetRecoilState(isLoadingState); //로딩
-
   return (
     <div className="page">
       <div className="objects">
