@@ -35,3 +35,31 @@
   font-family: "Pixel";
   font-weight: 900;
 }
+
+@font-face {
+  font-family: "VITRO_CORE";
+  font-weight: 500;
+  src: url("../assets/fonts/VITRO_CORE.ttf") format("woff");
+}
+@font-face {
+  font-family: "VITRO_INSPIRE";
+  font-weight: 500;
+  src: url("../assets/fonts/VITRO_INSPIRE.ttf") format("woff");
+}
+@font-face {
+  font-family: "VITRO_PRIDE";
+  font-weight: 500;
+  src: url("../assets/fonts/VITRO_PRIDE.ttf") format("woff");
+}
+.vit-core {
+  font-family: "VITRO_CORE";
+  font-weight: 500;
+}
+.vit-inspire {
+  font-family: "VITRO_INSPIRE";
+  font-weight: 500;
+}
+.vit-pride {
+  font-family: "VITRO_PRIDE";
+  font-weight: 500;
+}

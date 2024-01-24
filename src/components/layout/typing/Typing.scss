@@ -1,0 +1,24 @@
+.typing-text {
+  color: #fff;
+  font-size: 20px;
+  &::after {
+    content: "|";
+    animation: blink 0.5s infinite;
+  }
+  &.fin-type {
+    &::after {
+      content: "";
+    }
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
