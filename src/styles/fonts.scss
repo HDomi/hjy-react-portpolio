@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Pixel";
+  font-weight: 300;
+  src: url("../assets/fonts/PF_Pixel_S.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Pixel";
+  font-weight: 500;
+  src: url("../assets/fonts/PF_Pixel_S_Bold.ttf") format("woff");
+}
+@font-face {
+  font-family: "Pixel";
+  font-weight: 700;
+  src: url("../assets/fonts/PF_Pixel.ttf") format("woff");
+}
+@font-face {
+  font-family: "Pixel";
+  font-weight: 900;
+  src: url("../assets/fonts/PF_Pixel_Bold.ttf") format("woff");
+}
+
+.pixel-s {
+  font-family: "Pixel";
+  font-weight: 300;
+}
+.pixel-s-bold {
+  font-family: "Pixel";
+  font-weight: 500;
+}
+.pixel {
+  font-family: "Pixel";
+  font-weight: 700;
+}
+.pixel-bold {
+  font-family: "Pixel";
+  font-weight: 900;
+}
