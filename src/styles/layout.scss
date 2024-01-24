@@ -11,6 +11,7 @@ html,
   height: 100%;
   background: rgb(32, 32, 36);
   color: #fff;
+  overflow-x: hidden;
   &::-webkit-scrollbar {
     width: 2px;
   }
@@ -77,6 +78,11 @@ button {
   justify-content: center;
 }
 .page {
+  width: 100%;
+  height: 100%;
+}
+.motion-page {
+  position: absolute;
   width: 100%;
   height: 100%;
 }

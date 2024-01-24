@@ -3,25 +3,19 @@ import { useEffect, useState } from "react";
 
 export const Typing = (text: string) => {
   const [typedText, setTypedText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    let currentIndex = 0;
-    const typingInterval = setInterval(() => {
-      if (currentIndex < text.length) {
+    if (currentIndex < text.length) {
+      const typingTimeout = setTimeout(() => {
         setTypedText((prevText) => prevText + text[currentIndex]);
-        currentIndex++;
-      }
-      if (currentIndex >= text.length) {
-        clearInterval(typingInterval);
-      }
-    }, 300);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      }, 300);
+      return () => clearTimeout(typingTimeout);
+    }
+  }, [currentIndex, text]);
 
-    return () => {
-      clearInterval(typingInterval);
-    };
-  }, [text]);
-
-  return <div className="typing-text">{typedText}</div>;
+  return <div className="typing-text">{`${typedText}`}</div>;
 };
 
 export default Typing;
